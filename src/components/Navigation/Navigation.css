@@ -172,7 +172,6 @@
   cursor: pointer;
 }
 
-/* Saved nav bar start here */
 
 .saved-nav {
   border-bottom: 1px solid #081d2d4d;
@@ -248,11 +247,6 @@
   .main-nav__logo {
     font-size: 20px;
     line-height: 24px;
-  }
-
-  . {
-    font-size: 16px;
-    line-height: 20px;
   }
 
   .main-nav__menu-btn-white {
@@ -347,8 +341,7 @@
   }
 
   .main-nav__menu-item,
-  .main-nav__button-nin,
-  .,
+  .main-nav__button-signin,
   .main-nav__menu-saved-user,
   .main-nav__menu-saved,
   .nav__logout-black,
