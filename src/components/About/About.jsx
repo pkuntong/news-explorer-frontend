@@ -1,5 +1,5 @@
 import './About.css';
-import authorProfile from '../../assets/author-image.jpg';
+import authorProfile from '../../assets/author.jpg';
 function About() {
   return (
     <section className='about'>

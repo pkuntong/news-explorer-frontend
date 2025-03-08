@@ -1,0 +1,375 @@
+@import url('../../index.css');
+
+.main-nav {
+  padding: 19px 104px 13px;
+  border-bottom: 1px solid rgba(246, 244, 244, 0.7);
+}
+
+.main-nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Roboto-Regular', sans-serif;
+}
+
+.main-nav .main-nav__container a {
+  text-decoration: none;
+}
+
+.main-nav__logo {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Roboto-Slab-Bold', sans-serif;
+  font-size: 20px;
+}
+
+.main-nav__logo-white {
+  color: #fff;
+}
+
+.main-nav__logo-black {
+  text-decoration: none;
+  color: #000;
+}
+
+.main-nav__menu {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+
+.main-nav__buttons {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+
+.main-nav__btn {
+  display: none;
+}
+
+.main-nav__menu-item {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+}
+
+.main-nav__menu-item.active::after {
+  content: '';
+  position: absolute;
+  width: 68px;
+  height: 3px;
+  background: #fff;
+  left: -6.5px;
+  bottom: -27px;
+}
+
+.main-nav__button-signin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  background: transparent;
+
+  border-radius: 100px;
+  margin: 0;
+  width: 176px;
+  height: 48px;
+
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: 18px;
+}
+
+.main-nav__menu-saved {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Roboto-Regular', sans-serif;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.main-nav__menu-saved-user {
+  border: none;
+  background-color: transparent;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: 'Roboto-Regular', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  max-height: 80px;
+  width: 178px;
+}
+
+.main-nav__menu-saved-user.active::after {
+  content: '';
+  position: absolute;
+  width: 178px;
+  height: 3px;
+  background: #000;
+  margin-bottom: -70px;
+}
+
+.main-nav__menu-open {
+  background-color: #1a1b22;
+  min-height: 10px;
+  overflow: visible;
+}
+
+.main-nav__menu-btn {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  border-radius: 25px;
+  height: 48px;
+  cursor: pointer;
+}
+
+.main-nav__menu-btn-white {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-family: 'Roboto-Regular', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.main-nav__menu-username {
+  font-family: 'Roboto-Regular', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.main-nav__button-signin.active,
+.main-nav__button-signin:hover {
+  border: 1px solid #ffffff;
+}
+
+.main-nav__menu-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Saved nav bar start here */
+
+.saved-nav {
+  border-bottom: 1px solid #081d2d4d;
+}
+
+.saved-nav__container {
+  background-color: white;
+}
+
+.saved-nav__btn {
+  display: none;
+}
+
+.saved-nav__menu {
+  gap: 34px;
+}
+
+.saved-nav__menu-btn-black {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  border-radius: 25px;
+  height: 48px;
+  cursor: pointer;
+  background: transparent;
+}
+
+.saved-nav__menu-item {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: black;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  font-family: 'Roboto-Regular', sans-serif;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 600px) {
+  .main-nav {
+    padding: 5px 40px;
+  }
+
+  .main-nav__container {
+    height: 56px;
+    margin: 0 auto;
+  }
+
+  .main-nav__menu {
+    gap: 16px;
+  }
+
+  .main-nav__menu-item {
+    display: flex;
+    justify-content: center;
+
+    width: 64px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .main-nav__buttons {
+    gap: 16px;
+  }
+
+  .main-nav__menu-item.active::after {
+    bottom: -23px;
+    left: 2.5px;
+  }
+
+  .main-nav__logo {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  . {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .main-nav__menu-btn-white {
+    width: 108px;
+    height: 40px;
+  }
+
+  .main-nav__menu-saved {
+    display: flex;
+    justify-content: center;
+    width: 160px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .main-nav__menu-saved-user {
+    width: 160px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .main-nav__menu-saved-user.active::after {
+    margin-top: -12px;
+    width: 160px;
+  }
+
+  .saved-nav__menu-btn-black {
+    height: 40px;
+  }
+
+  .main-nav__button-signin {
+    padding: 8px 12px;
+    width: 152px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 5px 0 0 0;
+  }
+
+  .saved-nav {
+    padding: 8px 40px 3px;
+    /* height: 66px; */
+  }
+
+  .nav__saved__news-username_white {
+    margin-right: 30px;
+  }
+
+  .nav__saved__news-username_black {
+    margin-right: 30px;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    margin-right: -35px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-nav {
+    border-bottom: 1px solid rgba(141, 141, 141, 0.7);
+    padding: 0 16px;
+  }
+
+  .main-nav__container {
+    height: 56px;
+    width: 100%;
+  }
+
+  .nav__logo {
+    font-size: 16px;
+  }
+
+  .nav__logo-black {
+    text-decoration: none;
+  }
+
+  .main-nav__menu {
+    display: none;
+  }
+
+  .main-nav__buttons {
+    display: none;
+  }
+
+  .main-nav__btn {
+    display: flex;
+    background: url(../../assets/mobile-menu-white.svg) center no-repeat;
+    width: 24px;
+    height: 24px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .main-nav__menu-item,
+  .main-nav__button-nin,
+  .,
+  .main-nav__menu-saved-user,
+  .main-nav__menu-saved,
+  .nav__logout-black,
+  .nav__logout,
+  .nav__saved__news-username_black,
+  .main-nav__menu-username-black,
+  .main-nav__menu-username-white,
+  .nav__saved__news-username_white,
+  .nav__button-logout-white,
+  .nav__button-logout-black {
+    display: none;
+  }
+
+  .saved-nav__btn {
+    display: flex;
+    background: transparent url(../../assets/mobile-menu-dark.svg) center
+      no-repeat;
+    width: 24px;
+    height: 24px;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+}
