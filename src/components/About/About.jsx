@@ -14,7 +14,7 @@ function About() {
         <div className='about__right'>
           <h2 className='about__header'>About the author</h2>
           <p className='about__text'>
-            Hello! I'm Pau Kuntong, a Full-Stack Software Engineer based in the Washington, DC area.
+            Hi! I'm Pau Kuntong, a Full-Stack Software Engineer based in the Washington, DC area.
             <br />
             <br />
             My time at TripleTen was truly transformative, allowing me to develop strong skills in JavaScript, React, and Backend Development.
