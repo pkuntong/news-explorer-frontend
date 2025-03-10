@@ -60,7 +60,7 @@ function NewsCard({
           </h3>
           <p
             className={`news-card__popup-text ${
-              isHovered ? '' : 'news-card__popup-text_hidden'
+              isHovered && 'news-card__popup-text_hidden'
             }`}
           >
             Remove from saved
@@ -92,7 +92,7 @@ function NewsCard({
         <>
           <p
             className={`news-card__popup-text ${
-              isHovered ? '' : 'news-card__popup-text_hidden'
+              isHovered && 'news-card__popup-text_hidden'
             }`}
           >
             Sign in to save articles
@@ -125,7 +125,7 @@ function NewsCard({
           />
         )}
 
-        <section className='news-card__text'>
+        <div className='news-card__text'>
           <h5 className='news-card__date'>{formattedDate}</h5>
           <h4 className='news-card__title'>{newsData.title}</h4>
           <p className='news-card__description'>
@@ -136,7 +136,7 @@ function NewsCard({
               {newsData.source.name || newsData.source}
             </h5>
           )}
-        </section>
+        </div>
       </a>
     </section>
   );

@@ -62,7 +62,7 @@
   z-index: 5;
 }
 
-.news__button-delete:hover {
+.news-card__button-delete:hover {
   transition: all 0.25s ease-in-out;
   background: url(../../assets/trash-hover.svg);
   cursor: pointer;
@@ -196,7 +196,7 @@
     height: 150px;
   }
 
-  .news__keyword {
+  .news-card__keyword {
     padding: 8px 20px;
     font-size: 14px;
     line-height: 24px;
@@ -204,7 +204,7 @@
     top: 0;
   }
 
-  .news__button-delete {
+  .news-card__button-delete {
     top: 10px;
     right: 10px;
   }
@@ -244,12 +244,12 @@
     margin: 0;
   }
 
-  .news__keyword {
+  .news-card__keyword {
     left: 20px;
     top: 5px;
   }
 
-  .news__button-delete {
+  .news-card__button-delete {
     top: 17px;
     right: 20px;
   }
