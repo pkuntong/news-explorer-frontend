@@ -55,18 +55,18 @@ function NewsCard({
     <section className='news-card'>
       {currentPage === '/saved-news' && (
         <>
-          <h3 className='news__keyword'>
+          <h3 className='news-card__keyword'>
             {capitalizeFirstLetter(newsData.keyword)}
           </h3>
           <p
-            className={`news__popup-text ${
-              isHovered ? '' : 'news__popup-text_hidden'
+            className={`news-card__popup-text ${
+              isHovered ? '' : 'news-card__popup-text_hidden'
             }`}
           >
             Remove from saved
           </p>
           <button
-            className='news__button-delete'
+            className='news-card__button-delete'
             onClick={handleRemoveClick}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
@@ -76,11 +76,11 @@ function NewsCard({
 
       {isLoggedIn && currentPage === '/' ? (
         <button
-          className={`news__button-bookmark ${
+          className={`news-card__button-bookmark ${
             savedArticles.some(
               savedArticles => savedArticles.link === newsData.url
             )
-              ? 'news__button-bookmark_marked'
+              ? 'news-card__button-bookmark_marked'
               : ''
           }`}
           onClick={newsData.isSaved ? handleRemoveClick : handleBookmarkClick}
@@ -91,15 +91,15 @@ function NewsCard({
       {!isLoggedIn && (
         <>
           <p
-            className={`news__popup-text ${
-              isHovered ? '' : 'news__popup-text_hidden'
+            className={`news-card__popup-text ${
+              isHovered ? '' : 'news-card__popup-text_hidden'
             }`}
           >
             Sign in to save articles
           </p>
 
           <button
-            className='news__button-bookmark'
+            className='news-card__button-bookmark'
             onClick={onClick}
             onMouseEnter={() => {
               setIsHovered(true);

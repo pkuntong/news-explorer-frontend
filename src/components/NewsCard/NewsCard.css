@@ -15,7 +15,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.news__keyword {
+.news-card__keyword {
   background-color: #fff;
   padding: 12px 22px;
   text-align: center;
@@ -30,7 +30,7 @@
   z-index: 5;
 }
 
-.news__popup-text {
+.news-card__popup-text {
   background-color: #fff;
   padding: 8px 22px;
   border-radius: 8px;
@@ -44,12 +44,12 @@
   z-index: 5;
 }
 
-.news__popup-text_hidden {
+.news-card__popup-text_hidden {
   display: none;
   z-index: 5;
 }
 
-.news__button-delete {
+.news-card__button-delete {
   background: url(../../assets/trash.svg);
   width: 40px;
   height: 40px;
@@ -68,7 +68,7 @@
   cursor: pointer;
 }
 
-.news__button-bookmark {
+.news-card__button-bookmark {
   background: transparent url(../../assets/bookmark-normal.svg);
   width: 40px;
   height: 40px;
@@ -81,13 +81,13 @@
   z-index: 5;
 }
 
-.news__button-bookmark:hover {
+.news-card__button-bookmark:hover {
   z-index: 5;
   transition: all 0.25s ease-in-out;
   background: transparent url(../../assets/bookmark-hover.svg);
 }
 
-.news__button-bookmark_marked {
+.news-card__button-bookmark_marked {
   z-index: 5;
   background: transparent url(../../assets/bookmark-marked.svg);
 }
@@ -209,7 +209,7 @@
     right: 10px;
   }
 
-  .news__button-bookmark {
+  .news-card__button-bookmark {
     margin-left: 165px;
     margin-top: 10px;
   }
@@ -254,7 +254,7 @@
     right: 20px;
   }
 
-  .news__button-bookmark {
+  .news-card__button-bookmark {
     margin-left: calc(100% - 50px);
   }
 
