@@ -12,7 +12,7 @@ function Footer() {
         <nav className='footer__links-wrapper'>
           <ul className='footer__links'>
             <li>
-              <a href='#' className='footer__link footer__home' target='_blank'>
+              <a href='#' className='footer__link footer__home'>
                 Home
               </a>
             </li>
@@ -21,6 +21,7 @@ function Footer() {
                 href='https://tripleten.com/'
                 className='footer__link footer__triplenTen'
                 target='_blank'
+                rel="noopener noreferrer"
               >
                 TriplenTen
               </a>
@@ -32,6 +33,7 @@ function Footer() {
                 href='https://github.com/pkuntong'
                 className='footer__link-github'
                 target='_blank'
+                rel="noopener noreferrer"
               >
                 <img
                   src={githubLogo}
@@ -45,6 +47,7 @@ function Footer() {
                 href='https://www.facebook.com/'
                 className='footer__link-facebook'
                 target='_blank'
+                rel="noopener noreferrer"
               >
                 <img
                   src={facebookLogo}
