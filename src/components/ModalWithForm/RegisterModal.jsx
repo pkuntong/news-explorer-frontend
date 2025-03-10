@@ -41,7 +41,7 @@ function RegisterModal({
       title='Sign up'
       name='signup'
       buttonText={IsLoading ? 'Loading...' : 'Sign up'}
-      buttonText2={'or Log in'}
+      alternateButtonText='or Log in'
     >
       <label htmlFor='email2' className='modal__label'>
         Email
@@ -61,7 +61,7 @@ function RegisterModal({
       <label htmlFor='password2' className='modal__label'>
         Password
         <input
-          className='modal__input'
+          className={`modal__input ${errors.password ? 'modal__input-error' : ''}`} 
           type='password'
           name='password'
           id='password2'
@@ -76,7 +76,7 @@ function RegisterModal({
       <label htmlFor='username1' className='modal__label'>
         Username
         <input
-          className='modal__input'
+          className={`modal__input ${errors.username ? 'modal__input-error' : ''}`} 
           type='text'
           name='username'
           id='username1'
@@ -88,12 +88,12 @@ function RegisterModal({
         />
         <span className='modal__error'>{errors.username}</span>
       </label>
-      <button type='submit' className='modal__button'>
+      <button type='submit' className='modal__submit-button'>
         Sign up
       </button>
-      <button onClick={onLoginClick} type='button' className='modal__button-alternate'>
+      <button onClick={onLoginClick} type='button' className='modal__alternate-button'>
         {' '}
-        or <span className='modal__button-alternate-text'>Sign in</span>
+        or <span className='modal__alternate-button-text'>Sign in</span>
       </button>
     </ModalWithForm>
   );

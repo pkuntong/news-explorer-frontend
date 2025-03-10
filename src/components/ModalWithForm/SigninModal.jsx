@@ -9,7 +9,6 @@ const SigninModal = ({
   onRegisterClick,
   onLogInClick,
   IsLoading,
-  onLogIn,
 }) => {
   const currentUser = useContext(currentUserContext);
   const inputValues = {
@@ -40,7 +39,7 @@ const SigninModal = ({
       onClose={onClose}
       title='Sign in'
       buttonText={IsLoading ? 'Loading...' : 'Sign in'}
-      ButtonText2='or Sign up'
+      alternateButtonText="or Sign up"
     >
       <label htmlFor='email1' className='modal__label'>
         Email
@@ -55,6 +54,7 @@ const SigninModal = ({
           required
           autoComplete='current-email'
         />
+         <span className='modal__error'>{errors.email}</span>
       </label>
       <label htmlFor='password' className='modal__label'>
         Password
@@ -71,8 +71,9 @@ const SigninModal = ({
           required
           autoComplete='current-password'
         />
+        <span className='modal__error'>{errors.password}</span>
       </label>
-      <button type='submit' onClick={onLogInClick} className='modal__submit-button'>
+      <button type='submit' className='modal__submit-button'>
         Sign in
       </button>
       <button onClick={onRegisterClick} className='modal__alternate-button'>

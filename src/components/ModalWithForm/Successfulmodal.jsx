@@ -13,7 +13,7 @@ function SuccessfulModal({ isOpen, onClose, onLoginClick }) {
           onClick={onClose}
         ></button>
         <button
-          className='modal__login-button'
+          className='modal__submit-button'
           type='button'
           onClick={onLoginClick}
         >
