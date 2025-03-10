@@ -178,7 +178,6 @@
   width: 315px;
 }
 
-/* successful Modal end here */
 @media only screen and (max-width: 1024px) and (min-width: 600px) {
   .modal__content {
     padding: 35px 24px 30px;
