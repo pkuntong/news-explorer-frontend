@@ -1,7 +1,6 @@
 .footer {
   font-family: 'Roboto-Regular', sans-serif;
   width: 100%;
-
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -16,7 +15,6 @@
 
 .footer__copyright {
   color: #b6bcbf;
-
   font-size: 16px;
 }
 
@@ -25,10 +23,16 @@
   gap: 20px;
 }
 
-.footer__links {
+.footer__links,
+.footer__social-links {
   display: flex;
   list-style: none;
   padding: 0;
+}
+
+.footer__links li:not(:last-child), 
+.footer__social-link {
+  margin-right: 24px;
 }
 
 .footer__link {
@@ -38,39 +42,17 @@
   font-style: normal;
   line-height: 24px;
   color: #1a1b22;
-  list-style: none;
   text-decoration: none;
 }
 
-.footer__home {
-  margin-right: 30px;
-}
-
-.footer__link-icon {
+.footer__social-icon {
   cursor: pointer;
 }
 
-.footer__social-links {
-  display: flex;
-
-  list-style: none;
-  padding: 0;
-}
-
-.footer__link-github {
-  padding: 0 24px;
-}
-
 @media only screen and (max-width: 1024px) and (min-width: 600px) {
-  .footer {
-    width: 100%;
-  }
+ 
   .footer__container {
     padding: 0 40px;
-  }
-
-  .footer__content {
-    gap: 10px;
   }
 
   .footer__copyright {
@@ -87,53 +69,43 @@
     justify-content: center;
   }
 
-  .footer__link {
-    margin: 21px 40px 19px 0;
+  .footer__links li:not(:last-child) {
+    margin-right: 40px;
   }
 
-  .footer__link-github {
-    margin: 0 24px 0 0;
-    padding: 0;
+  .footer__link {
+    margin: 0;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .footer {
-    width: 100%;
-  }
-
+ 
   .footer__container {
     margin: 0 16px 22px 16px;
     padding: 0;
     flex-direction: column-reverse;
   }
+
   .footer__copyright {
     font-size: 16px;
     line-height: 22px;
   }
 
-  .footer__links-wrapper {
-    gap: auto;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    padding: 0;
-  }
-
   .footer__links {
-    left: 0;
     flex-direction: column;
     gap: 20px;
   }
 
+  .footer__links li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
   .footer__link {
-    font-size: 18px;
+    margin-bottom:0;
   }
 
   .footer__social-links {
     margin: 22px 0 0 0;
-  }
-  .footer__link-github {
-    padding: 0 24px;
   }
 }

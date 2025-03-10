@@ -12,14 +12,14 @@ function Footer() {
         <nav className='footer__links-wrapper'>
           <ul className='footer__links'>
             <li>
-              <a href='#' className='footer__link footer__home'>
+              <a href='#' className='footer__link'>
                 Home
               </a>
             </li>
             <li>
               <a
                 href='https://tripleten.com/'
-                className='footer__link footer__triplenTen'
+                className='footer__link'
                 target='_blank'
                 rel="noopener noreferrer"
               >
@@ -31,28 +31,28 @@ function Footer() {
             <li>
               <a
                 href='https://github.com/pkuntong'
-                className='footer__link-github'
+                className='footer__social-link'
                 target='_blank'
                 rel="noopener noreferrer"
               >
                 <img
                   src={githubLogo}
                   alt='GitHub Logo'
-                  className='footer__link-icon'
+                  className='footer__social-icon'
                 />
               </a>
             </li>
             <li>
               <a
                 href='https://www.facebook.com/'
-                className='footer__link-facebook'
+                className='footer__social-link'
                 target='_blank'
                 rel="noopener noreferrer"
               >
                 <img
                   src={facebookLogo}
                   alt='Facebook Logo'
-                  className='footer__link-icon'
+                  className='footer__social-icon'
                 />
               </a>
             </li>
