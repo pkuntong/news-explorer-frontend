@@ -94,19 +94,14 @@
   line-height: 14.52px;
 }
 
-/* Register modal & Login Modal css */
-.Login__button,
-.SignUp__button {
+.modal__submit-button {
   background-color: #2f71e5;
-
   padding: 20px 115px;
   border: none;
   border-radius: 50px;
   color: #fff;
-
   transition: all 0.25s ease-in-out;
   cursor: pointer;
-
   width: 358px;
   height: 64px;
   margin: 8px auto 0;
@@ -115,31 +110,27 @@
   font-size: 18px;
 }
 
-.Login__button:hover,
-.SignUp__button:hover {
+.modal__submit-button:hover {
   color: #b6bcbf;
   background-color: #e8e8e8;
 }
 
-.Or-Sign-Up__button,
-.Or-Login__button {
+.modal__alternate-button {
   border: none;
   cursor: pointer;
   background: none;
-
   font-family: 'Inter-Regular', sans-serif;
   font-size: 14px;
-
   transition: all 0.25s ease-in-out;
   padding: 0;
   margin-top: 20px;
 }
 
-.Or__button-color {
+.modal__alternate-button-text {
   color: #2f71e5;
 }
 
-.Or__button-color:hover {
+.modal__alternate-button-text:hover {
   opacity: 60%;
 }
 
@@ -147,15 +138,12 @@
   color: #ff0000;
 }
 
-/* Successful Modal start here */
-
 .modal__login-button {
   color: #2f71e5;
   border: none;
   cursor: pointer;
   background: none;
   padding: 0;
-
   transition: all 0.25s ease-in-out;
   font-family: 'Inter-Regular', sans-serif;
   font-size: 18px;
@@ -183,8 +171,7 @@
     padding: 35px 24px 30px;
   }
 
-  .Login__button,
-  .SignUp__button {
+  .modal__submit-button {
     background-color: #2f71e5;
 
     padding: 20px 115px;
@@ -231,15 +218,14 @@
     display: block;
   }
 
-  .Login__button,
-  .SignUp__button {
+  .modal__submit-button {
     width: 358px;
     height: 64px;
     font-size: 16px;
     margin-top: 20px;
   }
 
-  .Or-Sign-Up__button {
+  .modal__alternate-button {
     font-size: 12px;
     margin-top: 15px;
   }
@@ -280,16 +266,14 @@
     font-size: 12px;
   }
 
-  .Login__button,
-  .SignUp__button {
+  .modal__submit-button {
     width: 288px;
     height: 56px;
     font-size: 16px;
     margin-top: auto;
   }
 
-  .Or-Sign-Up__button,
-  .Or-Login__button {
+  .modal__alternate-button {
     font-size: 14px;
     margin: 16px 10px 10px 10px;
   }

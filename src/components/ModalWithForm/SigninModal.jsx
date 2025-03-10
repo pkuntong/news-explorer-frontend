@@ -72,12 +72,12 @@ const SigninModal = ({
           autoComplete='current-password'
         />
       </label>
-      <button type='submit' onClick={onLogInClick} className='Login__button'>
+      <button type='submit' onClick={onLogInClick} className='modal__submit-button'>
         Sign in
       </button>
-      <button onClick={onRegisterClick} className='Or-Sign-Up__button'>
+      <button onClick={onRegisterClick} className='modal__alternate-button'>
         {' '}
-        or <span className='Or__button-color'>Sign up</span>
+        or <span className='modal__alternate-button-text'>Sign up</span>
       </button>
     </ModalWithForm>
   );

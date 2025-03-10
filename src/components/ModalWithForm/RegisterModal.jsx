@@ -88,12 +88,12 @@ function RegisterModal({
         />
         <span className='modal__error'>{errors.username}</span>
       </label>
-      <button type='submit' className='SignUp__button'>
+      <button type='submit' className='modal__button'>
         Sign up
       </button>
-      <button onClick={onLoginClick} type='button' className='Or-Login__button'>
+      <button onClick={onLoginClick} type='button' className='modal__button-alternate'>
         {' '}
-        or <span className='Or__button-color'>Sign in</span>
+        or <span className='modal__button-alternate-text'>Sign in</span>
       </button>
     </ModalWithForm>
   );
