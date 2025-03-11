@@ -52,21 +52,21 @@ function NewsCard({
   }, [location.pathname, setCurrentPage]);
 
   return (
-    <section className='news-card'>
+    <article className='news-cards__item'>
       {currentPage === '/saved-news' && (
         <>
-          <h3 className='news-card__keyword'>
+          <h3 className='news-cards__item-keyword'>
             {capitalizeFirstLetter(newsData.keyword)}
           </h3>
           <p
-            className={`news-card__popup-text ${
-              isHovered && 'news-card__popup-text_hidden'
+            className={`news-cards__item-popup-text ${
+              isHovered && 'news-cards__item-popup-text_hidden'
             }`}
           >
             Remove from saved
           </p>
           <button
-            className='news-card__button-delete'
+            className='news-cards__item-button-delete'
             onClick={handleRemoveClick}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
@@ -76,11 +76,11 @@ function NewsCard({
 
       {isLoggedIn && currentPage === '/' ? (
         <button
-          className={`news-card__button-bookmark ${
+          className={`news-cards__item-button-bookmark ${
             savedArticles.some(
               savedArticles => savedArticles.link === newsData.url
             )
-              ? 'news-card__button-bookmark_marked'
+              ? 'news-cards__item-button-bookmark_marked'
               : ''
           }`}
           onClick={newsData.isSaved ? handleRemoveClick : handleBookmarkClick}
@@ -91,15 +91,15 @@ function NewsCard({
       {!isLoggedIn && (
         <>
           <p
-            className={`news-card__popup-text ${
-              isHovered && 'news-card__popup-text_hidden'
+            className={`news-cards__item-popup-text ${
+              isHovered && 'news-cards__item-popup-text_hidden'
             }`}
           >
             Sign in to save articles
           </p>
 
           <button
-            className='news-card__button-bookmark'
+            className='news-cards__item-button-bookmark'
             onClick={onClick}
             onMouseEnter={() => {
               setIsHovered(true);
@@ -112,33 +112,33 @@ function NewsCard({
       )}
 
       <a
-        className='news-card__link'
+        className='news-cards__item-link'
         href={newsData.url}
         target='_blank'
         rel='noreferrer'
       >
         {newsData.urlToImage && (
           <img
-            className='news-card__image'
+            className='news-cards__item-image'
             src={newsData.urlToImage}
             alt={newsData.title}
           />
         )}
 
-        <div className='news-card__text'>
-          <h5 className='news-card__date'>{formattedDate}</h5>
-          <h4 className='news-card__title'>{newsData.title}</h4>
-          <p className='news-card__description'>
+        <div className='news-cards__item-text'>
+          <h5 className='news-cards__item-date'>{formattedDate}</h5>
+          <h4 className='news-cards__item-title'>{newsData.title}</h4>
+          <p className='news-cards__item-description'>
             {newsData.text || newsData.description}
           </p>
           {newsData.source && (
-            <h5 className='news-card__source'>
+            <h5 className='news-cards__item-source'>
               {newsData.source.name || newsData.source}
             </h5>
           )}
         </div>
       </a>
-    </section>
+    </article>
   );
 }
 

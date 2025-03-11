@@ -62,7 +62,7 @@
   }
 
   .footer__links-wrapper {
-    gap: 0;
+    gap: auto;
   }
 
   .footer__links {
@@ -91,9 +91,19 @@
     line-height: 22px;
   }
 
+  .footer__links-wrapper {
+    width: 100%;
+    align-items: center;
+    gap: auto;  
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+
   .footer__links {
     flex-direction: column;
     gap: 20px;
+    left: 0;
   }
 
   .footer__links li:not(:last-child) {

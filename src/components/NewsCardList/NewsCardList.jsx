@@ -20,13 +20,13 @@ const NewsCardList = ({
   };
 
   return (
-    <section className='news__card-section'>
+    <section className='news-cards'>
       {hasSearched ? (
         <>
-          <h2 className='news__cards-header'>Search results</h2>
-          <article className='news__cards-container'>
+          <h2 className='news-cards__title'>Search results</h2>
+          <ul className='news-cards__list'>
             {searchResult.slice(0, cardsDisplayed).map((result, index) => (
-              <li className='news__card-list' key={result.id || index}>
+              <li className='news-cards__item' key={result.id || index}>
                 <NewsCard
                   newsData={result}
                   handleSaveArticle={handleSaveArticle}
@@ -35,10 +35,10 @@ const NewsCardList = ({
                 />
               </li>
             ))}
-          </article>
+          </ul>
           <button
-            className={`news__cards-button ${
-              cardsDisplayed >= searchResult.length ? 'hidden' : ''
+            className={`news-cards__button ${
+              cardsDisplayed >= searchResult.length ? 'news-cards__button_hidden' : ''
             }`}
             onClick={increaseVisibleCards}
           >
